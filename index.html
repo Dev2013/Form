@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="/eventeQotDxuv9fNSCJS1IVIhYplZME8WK3g3" method="POST" onsubmit="return validateForm()">
+            <h2 class="title" style="padding-top: 2rem 0;">Register</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" id="name" placeholder="Name" pattern="^[a-zA-Z\s]+$"   required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" id="email"  placeholder="Email" pattern="^[a-zA-Z]*20[0-9]{5}@akgec\.ac\.in$" title="AKG email only" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user-graduate"></i>
+              <input type="text" name="stdno" id="stdno" placeholder="Student No" pattern="^20[0-9]{5}$" title="AKG student number only" required/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-phone"></i>
+              <input type="text" name="contact" id="contact"  placeholder="contact" pattern="^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$" required />
+            </div>
+            <div class="input-field">
+            <i class="fas fa-code-branch"></i>
+            <select class="selectCls" name="branch" id="branch" pattern="^CS|AIML|DS|IT|ECE|EN|ME|CVL$" required>
+                <option value="" disabled selected hidden>Branch</option>
+              <option value="CSE">CSE</option>
+              <option value="AIML">AIML</option>
+              <option value="DS">DS</option>
+              <option value="CS">CS</option>
+              <option value="IT">IT</option>
+              <option value="CSIT">CSIT</option>
+              <option value="ECE">ECE</option>
+              <option value="EN">EN</option>
+              <option value="ME">ME</option>
+              <option value="CVL">Civil</option>
+            </select>
+          </div>
+          <!-- <div class="wrapper2"> -->
+          <div class="input-field">
+            <i class="fas fa-puzzle-piece"></i>
+          <select  class="selectCls" name="section" id="section" pattern="^1|2|3$" required>
+            <option value="" disabled selected hidden> Section </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          </div>
+          <div class="input-field">
+              <i class="fas fa-code"></i>
+          <select  class="selectCls" name="domain" id="domain" pattern="^web|app|psd|fig$" required>
+            <option value="" disabled selected hidden>Domain</option>
+            <option value="app">App Development</option>
+            <option value="web">Web Development</option>
+            <option value="fig">Figma</option>
+            <option value="psd">Photoshop</option>
+          </select>
+          </div>
+          <!-- </div> -->
+          <button  type="submit" class="btn " id="sign-in-btn">
+            Submit
+          </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Tech-Knockdown</h3>
+            <p>
+             A Comprehensive Introduction to Technlogies !!
+            </p>
+          </div>
+          <img src="img/logo (2).svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="app.js"></script> -->
+  </body>
+</html>
